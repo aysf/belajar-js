@@ -15,7 +15,7 @@ console.log(`nilai array setelah di pop: ${myArray}`);
 console.log(`nilai array yang dikeluarkan pop: ${arrayPop}`);
 console.log(`nilai array yang dikeluarkan shift: ${arrayShift}\n`);
 // delete dan splice() digunakan untuk menghapus element
-delete myArray[1];
+delete myArray[1]; // elemen yg dihapus akan menjadi undefined
 console.log(`array setelah di delete: ${myArray}`);
-myArray.splice(2,1);
+myArray.splice(2,3); // elemen yg dihapus diisi oleh elemen sebelumnya
 console.log(`array setelah di splice: ${myArray}\n`);

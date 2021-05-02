@@ -35,6 +35,23 @@ myArray.push('four');
 console.log(myArray);
 ```
 
+#### Spread operator 
+
+adalah salah satu fitur yang digunakan untuk menyebarkan nilai array menjadi beberapa elemen
+
+```js
+
+```
+spread juga digunakan untuk menggabungkan dua array
+
+```js
+let elemenLanjut = ["thunder", "ice", "metal", "strom"];
+console.log("menggabungkan array tanpa spread");
+console.log(elemenDasar, elemenLanjut);
+console.log("menggabungkan array dengan spread");
+console.log(...elemenDasar, ...elemenLanjut);
+
+```
 
 #### Object
 
@@ -62,3 +79,23 @@ ${tasRanselXyz["kode produksi"]} telah dijual dengan harga ${tasRanselXyz.harga}
 ```
 
 demo program dapat dijalankan dengan `node object.js` yang terdapat pada repository ini.
+
+#### Map
+
+sama seperti object, bedanya _key_ pada map dapat menggunakan tipe data apapun tidak terbatas pada string atau symbol. Untuk membuat map, gunakan sytax berikut:
+
+```js
+const myMap = new Map()
+```
+dalam tanda kurung _parentheses_, masukan array multidimensi dua kolom. Kolom pertama untuk _key_ kolom kedua untuk _value_. Contohnya dapat dilihat seperti berikut:
+
+```js
+const daftarNama = new Map(
+    [
+        [1, "Ananto"],
+        ['2', "Yusuf"],
+        [true, true]
+    ]
+)
+console.log(daftarNama);
+```
