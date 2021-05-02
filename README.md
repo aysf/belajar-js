@@ -20,6 +20,22 @@ Untuk menjalankan `node var.js` di terminal.
 
 ### Data Structure
 
+#### Array
+
+Array merupakan tipe data yang dapat mengelompokkan lebih dari satu nilai dan menempatkannya dalam satu variabel
+
+```js
+let myArray = [1, "dua", 2.5, 3, true];
+// menampilkan semua nilai array
+console.log(myArray);
+// menampilkan salah satu nilai array
+console.log(myArray[1]);
+// push() untuk menambahkan data pada array
+myArray.push('four');
+console.log(myArray);
+```
+
+
 #### Object
 
 Object adalah tipe data yang berisi _property_ berupa pasangan _key_ dan _value_. Syntax untuk menulis object dapat dilihat pada kode berikut:
