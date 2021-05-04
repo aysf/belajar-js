@@ -99,3 +99,7 @@ const daftarNama = new Map(
 )
 console.log(daftarNama);
 ```
+
+## Class
+
+class menyediakan informasi tentang suatu object. Jadi dapat dikatakan object adalah _instance_ dari sebuah _class_.
