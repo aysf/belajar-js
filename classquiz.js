@@ -28,21 +28,39 @@
  */
 
 
-class Animal()
+clasclass Animal
 {
-    constructor()
+    constructor(name, age)
     {
-        this.name = '';
-        this.age = 0;
+        this.name = name;
+        this.age = age;
         this.isMammal = true;
-
-    };
+    }
 }
 
 class Rabbit extends Animal
 {
-    constructor()
+    eat()
     {
-        super();
+        return `"${this.name} sedang makan!"`;
     }
 }
+
+class Eagle extends Animal
+{
+    constructor(name,age)
+    {
+        super(name,age);
+        this.isMammal = false;
+    }
+    fly()
+    {
+        return `"${this.name} sedang terbang!"`;
+    }
+}
+
+let myRabbit = new Rabbit("Labi", 2);
+let myEagle = new Eagle("Elo", 4);
+
+console.log(myEagle.fly());
+console.log(myRabbit.eat());
