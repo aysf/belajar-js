@@ -12,7 +12,7 @@ class Rabbit extends Animal
 {
     eat()
     {
-        return "${this.name} sedang makan!";
+        return `"${this.name} sedang makan!"`;
     }
 }
 
@@ -25,7 +25,7 @@ class Eagle extends Animal
     }
     fly()
     {
-        return `\"${this.name} sedang terbang!\"`;
+        return `"${this.name} sedang terbang!"`;
     }
 }
 
