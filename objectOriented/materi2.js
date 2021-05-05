@@ -4,21 +4,6 @@
 */
 
 
-// create user one
-let userOneEmail = 'ananto@email.com';
-let userOneName = 'Ananto';
-let userOneFriend = ['Yusuf'];
-
-// create user two
-let userTwoEmail = 'yusuf@email.com';
-let userTwoName = 'yusuf';
-let userTwoFriend = ['Wicaksono', 'Ananto'];
-
-// create user three
-let userThreeEmail = 'Wicaksono@email.com';
-let userThreeName = 'Wicak';
-let userThreeFriend = ['Yusuf'];
-
 /* alternative */
 var userOne = {
     email: 'Ryu@ninjas.com',
@@ -31,3 +16,11 @@ var userOne = {
         console.log(this.email, 'has logged out');
     }
 }
+
+console.log(userOne['name']);
+
+userOne.name = 'Ryo';
+
+console.log(userOne['name']);
+
+console.log(userOne.login);
