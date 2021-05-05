@@ -1,10 +1,9 @@
 /*
-* misal kamu mempunnyai 3 user baru dan membutuhkan variable yang sama untuk ketiga-tiganya
-* maka kamu harus membuat seperti ini
+* pada materi sebelumnya, kita telah membuat user dengan properti terpisah seperti nama dan email
+* namun cara tersebut kurang efektif karena kita harus membuat banyak variable untuk tiap user
+* sekarang kita coba membuat variable berupa object untuk tiap user sehingga cukup 1 var untuk 1 user
 */
 
-
-/* alternative */
 var userOne = {
     email: 'Ryu@ninjas.com',
     name: 'Ryu',
