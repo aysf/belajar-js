@@ -5,6 +5,10 @@ Ada beberapa cara untuk bermain pemograman JavaScript
 1. Bermain dengan browser. Kode javaScript disimpan dalam format *.js dan dipanggil melalui tag script dalam format html.
 2. Bermain di terminal. Simpann kode javaScript dalam format *.js dan jalankan dengan `node filename.js`
 
+untuk instalasi node di Ubuntu, bisa dilihat di sini
+
+https://github.com/nodesource/distributions/blob/master/README.md
+
 ## Creating and Use Variable in JavaScript
 
 Membuat variable `let` (dapat dirubah nilainya) dan `const` (nilainya tidak dapat dirubah/_re-assign_ setelah inisialisasi)
