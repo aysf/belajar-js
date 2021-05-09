@@ -9,4 +9,5 @@ folder _exercise_ terdiri dari
 - ex02: pengenalan _error property_ seperti `error.name`, `error.message` dan `error.stack`
 - ex03: pengenalan fungsi _finally_ dalam mengatasi eror
 - ex04: pengenalan fungsi _throw_ dalam mengatasi eror
-- ex05
+- ex05: menggunakan kombinasi _if statement_ dan _instance of_
+- ex06: 
