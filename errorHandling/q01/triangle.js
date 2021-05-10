@@ -100,17 +100,10 @@ const detectTriangle = (a, b, c) =>
           return 'Segitiga sembarang';
     } 
     catch(error)
+    if (error instanceof ValidationError)
     {
-        if (error instanceof SyntaxError) {
-            console.log(`JSON Error: ${error.message}`);
-        } else if (error instanceof ReferenceError) {
-            console.log(error.message);
-        } else {
-            console.log(error.stack);
-        }
+        return error.message;
     }
-  
-
 };
   
 console.log(detectTriangle(1));
