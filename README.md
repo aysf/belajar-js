@@ -1,5 +1,16 @@
 # belajar-js
 
+## Materi Belajar JavaScript:
+1. Fundamental Programming (tipe data, komentar, percabangan, pengulangan)
+2. Struktur Data
+3. Function
+4. OOP
+5. Functional Programming
+6. Module
+7. Penanganan eror
+8. Concurrency
+9. Testing
+
 Ada beberapa cara untuk bermain pemograman JavaScript
 
 1. Bermain dengan browser. Kode javaScript disimpan dalam format *.js dan dipanggil melalui tag script dalam format html.
