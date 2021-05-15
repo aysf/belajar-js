@@ -40,6 +40,10 @@ Untuk menjalankan `node var.js` di terminal.
 
 ### Data Structure
 
+question 
+1. Diberikan sejumlah elemen yang harus disimpan secara berurutan. Manakah struktur data yang akan digunakan? (map, object, array, set)
+2. Cara yang tepat untuk meng-eksport beberapa nilai sekaligus dalam module adalah
+
 #### Array
 
 Array merupakan tipe data yang dapat mengelompokkan lebih dari satu nilai dan menempatkannya dalam satu variabel
