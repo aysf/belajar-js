@@ -71,3 +71,10 @@ const requestListener = (request, response) => {
 ```
 
 ## membuat server nodejs dengan framework hapijs
+1. create npm project `npm init --y`
+2. install auto generator `npm install nodemon --save-dev`
+3. edit _package.json_ and use _nodemon_ to start server `"start": "nodemon server.js"`
+4. install eslint `npm install eslint --save-dev`
+5. configure eslint `npx eslint --init`
+6. add eslint command in the _script_ of _package.json_ `"lint": "eslint ./"`
+7. 
