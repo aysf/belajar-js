@@ -68,13 +68,53 @@ const requestListener = (request, response) => {
         response.end(`<h1> halaman tidak dapat ditemukan </h1>`);
     }
 };
+
+const server = http.createServer(requestListener);
+const port = 5000;
+const host = 'localhost';
+
+server.listen(port, host, () => {
+    console.log('Server berjalan pada http://${host}:${port}');
+});
+
 ```
 
 ## membuat server nodejs dengan framework hapijs
 1. create npm project `npm init --y`
 2. install auto generator `npm install nodemon --save-dev`
-3. edit _package.json_ and use _nodemon_ to start server `"start": "nodemon server.js"`
 4. install eslint `npm install eslint --save-dev`
 5. configure eslint `npx eslint --init`
-6. add eslint command in the _script_ of _package.json_ `"lint": "eslint ./"`
-7. 
+6. add nodemon and eslint command in runner _package.json_
+```js
+"scripts": {
+  "start": "nodemon ./src/server.js",
+  "lint": "eslint ./src"
+}, 
+```
+7. install hapi `npm install @hapi/hapi`
+8. structure project
+```sh
+notes-app-back-end
+├── node_modules
+├── src
+│ ├── handler.js //memuat seluruh fungsi-fungsi handler yang digunakan pada berkas routes
+│ ├── notes.js //memuat data notes yang disimpan dalam bentuk array object
+│ ├── routes.js //memuat kode konfigurasi routing server seperti menentukan path, method, dan handler yang digunakan
+│ └── server.js //memuat kode untuk membuat, mengonfigurasi, dan menjalankan server HTTP menggunakan Hapi
+├── .eslintrc.json
+├── package-lock.json
+└── package.json
+```
+9. content for _server.js_
+```js
+const Hapi = require('@hapi/hapi');
+
+const init = asynch () => {
+    const server = Hapi.server({port:5000, host:'localhost'});
+
+    await server.start();
+    console.log('server berjalan pada ${server.info.uri});
+}
+
+init();
+```
