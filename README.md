@@ -102,6 +102,12 @@ console.log(`produk ${tasRanselXyz.nama} yang berwarna ${tasRanselXyz.warna} den
 ${tasRanselXyz["kode produksi"]} telah dijual dengan harga ${tasRanselXyz.harga} Rupiah`)
 ```
 
+untuk menghapus pasangan properti pada object dapat menggunakan _keyword_ *delete* seperti pada syntax berikut
+
+```js
+delete tasRanselXyz["kode produksi"]
+```
+
 demo program dapat dijalankan dengan `node object.js` yang terdapat pada repository ini.
 
 #### Map
