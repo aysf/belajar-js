@@ -54,9 +54,19 @@ let myArray = [1, "dua", 2.5, 3, true];
 console.log(myArray);
 // menampilkan salah satu nilai array
 console.log(myArray[1]);
-// push() untuk menambahkan data pada array
+// push() dan unshift() untuk menambahkan data pada akhir dan awal array
 myArray.push('four');
+myArray.unshift('zero');
 console.log(myArray);
+// pop() dan shift() untuk mengeluarkan elemen pada akhir dan awal array
+myArray.pop();
+myArray.shift();
+console.log(myArray);
+// selain keempat metode diatas terdapat metode delete
+delete myArray[1];
+// dan metode splice
+// contoh metode splice untuk menghapus index 2 sebanyak 1 elemen
+myArray.splice(2,1);
 ```
 
 #### Spread operator 
@@ -106,6 +116,12 @@ untuk menghapus pasangan properti pada object dapat menggunakan _keyword_ *delet
 
 ```js
 delete tasRanselXyz["kode produksi"]
+```
+
+Sedangkan jika properti dengan nama key tidak ditemukan, maka object akan membuat properti baru
+
+```js
+tasRanserXyz.madeIn = "Malaysia"
 ```
 
 demo program dapat dijalankan dengan `node object.js` yang terdapat pada repository ini.

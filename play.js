@@ -1,15 +1,17 @@
-let firstName = "Ananto"
+let myArray = [1, "dua", 2.5, 3, true];
 
-const tasRanselXyz = {
-    nama: "Tas Ransel XYZ",
-    warna: "merah",
-    harga: 230000,
-    "kode produksi": "TR345",
-    isSold: true
-}
+myArray.pop()
 
-tasRanselXyz.harga = 214000
+myArray.push("last")
 
-delete tasRanselXyz["kode produksi"]
+myArray.shift()
 
-console.log(tasRanselXyz)
+myArray.unshift("zero")
+
+myArray.unshift(0)
+
+delete myArray[1]
+
+myArray.splice(1,2)
+
+console.log(myArray)
